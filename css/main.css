@@ -39,7 +39,7 @@ body {
 }
 .nav {
     display: flex;
-    column-gap: 166px;
+    /* column-gap: 166px; */
     align-items: center;
 
     padding-top: 23px;
@@ -72,13 +72,10 @@ body {
     width: 100%;
     left: 0;
 }
-h1 {
-    font-family: Disket-Mono-Bold, sans-serif;
-    font-size: 450px;
-}
 .header__title-main {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 627px;
 
     padding-top: 17px;
 }
@@ -87,6 +84,56 @@ h1 {
     font-family: Museo-Sans-Cyrl, sans-serif;
     font-size: 17px;
 }
-.header__title-h1 {
-
+#link-second {
+    margin-left: 166px;
+    margin-right: 195px;
+}
+#link-third {
+    margin-left: 179px;
+    margin-right: 166px;
+}
+.header__P {
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Disket-Mono-Regular, sans-serif;
+}
+.menu__link {
+    color: #E1E0DF;
+    cursor: url("../img/cursor.png") 4 1, default;
+}
+.menu__link:hover {
+    color: #956F29;
+}
+#menu-link-first {
+    margin-bottom: 9px;
+}
+.header__PD-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header__title-info {
+    font-family: Museo-Sans-Cyrl, sans-serif;
+    font-size: 17px;
+    margin-top: 16px;
+    margin-left: 0;
+    max-width: 280px
+}
+.header__title-logo {
+    transform: translate(-112px, -77px);
+}
+.header__info-help {
+    font-family: Museo-Sans-Cyrl, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+.header__footer-title {
+    padding-top: 42px;
+    margin-left: 9px;
 }
