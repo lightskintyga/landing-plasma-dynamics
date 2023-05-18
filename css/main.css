@@ -29,17 +29,19 @@ body {
     padding: 0 15px;
     width: 1312px;
 }
+
+/*------------- header ------------*/
+
 .header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 
-    min-height: 98px;
+    /* min-height: 848px; */
 }
 .nav {
     display: flex;
-    /* column-gap: 166px; */
     align-items: center;
 
     padding-top: 23px;
@@ -75,7 +77,7 @@ body {
 .header__title-main {
     display: flex;
     justify-content: space-between;
-    height: 627px;
+    /* min-height: 640px; */
 
     padding-top: 17px;
 }
@@ -96,21 +98,29 @@ body {
     margin-top: 10px;
     margin-left: 8px;
 }
+.header__D {
+    margin-top: 10px;
+    margin-left: 49px;
+}
 .menu {
     display: flex;
     flex-direction: column;
+    width: 265px;
     font-size: 20px;
+    margin-bottom: 22px;
     margin-left: 10px;
     font-family: Disket-Mono-Regular, sans-serif;
 }
 .menu__link {
     color: #E1E0DF;
+    transition: all .5s;
     cursor: url("../img/cursor.png") 4 1, default;
 }
 .menu__link:hover {
     color: #956F29;
 }
 #menu-link-first {
+    width: 210px;
     margin-bottom: 9px;
 }
 .header__PD-logo {
@@ -122,18 +132,125 @@ body {
     font-family: Museo-Sans-Cyrl, sans-serif;
     font-size: 17px;
     margin-top: 16px;
-    margin-left: 0;
-    max-width: 280px
+    width: 280px
 }
 .header__title-logo {
-    transform: translate(-112px, -77px);
+    pointer-events: none;
+    transform: translate(-41px, -22px);
 }
 .header__info-help {
     font-family: Museo-Sans-Cyrl, sans-serif;
     font-size: 17px;
     text-align: center;
+    width: 306px;
+    margin-bottom: 19px;
 }
 .header__footer-title {
-    padding-top: 42px;
     margin-left: 9px;
+    padding-top: 20px;
+}
+
+/*--------------- main ----------------*/
+
+/* о компании */
+
+.about-company__items {
+    display: flex;
+    min-height: 915px;
+}
+.about-company__items-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 345px;
+}
+.about-company__info-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 128px;
+}
+.company-name-text {
+    font-family: Disket-Mono-Regular, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+}
+.company-description-text {
+    font-family: Museo-Sans-Cyrl, sans-serif;
+    font-size: 19px;
+    width: 507px;
+    text-align: justify;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+}
+.img-ballGold {
+    margin-top: 20px;
+    margin-left: 483px;
+}
+.about-company__items-coatings {
+    display: flex;
+    padding-top: 130px;
+}
+.img-coatings {
+    margin-left: 49px;
+    margin-top: 132px;
+}
+.img-ballCopper {
+    margin-left: 60px;
+}
+
+/* технология плазменного напыления */
+
+.spraying-technology {
+    padding-top: 34px;
+    position: relative;
+    margin-right: 200px;
+    z-index: 99;
+}
+
+/* типы покрытий */
+
+.types-coatings__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+    padding-top: 96px;
+}
+.coatings-h2 {
+    font-family: Disket-Mono-Regular, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.types-coatings__row {
+    display: flex;
+    column-gap: 45px;
+}
+.coating-type-text {
+    font-family: Disket-Mono-Regular, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 12px;
+    text-align: center;
+}
+.coating-items {
+    text-align: center;
+    padding-bottom: 106px;
+}
+
+/* Оборудование для наплавки */
+
+.surfacing-equipment {
+
+}
+.equipment-big-form {
+
 }
