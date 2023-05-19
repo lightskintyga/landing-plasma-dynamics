@@ -23,11 +23,19 @@
 body {
     background: #0E0D0D;
     color: #E1E0DF;
+    overflow-x: hidden;
 }
 .container {
     margin: 0 auto;
     padding: 0 15px;
     width: 1312px;
+}
+.holding-container {
+    background-image: url("/img/foil-background.png");
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1480px;
+    min-height: 1100px;
 }
 
 /*------------- header ------------*/
@@ -249,7 +257,7 @@ body {
 
 /* Оборудование для наплавки */
 
-.surfacing-equipment__items {
+/*.surfacing-equipment__items {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,11 +266,9 @@ body {
 }
 .surfacing-equipment__form {
     background: rgba(225, 224, 223, 0.48);
-    /* вы */
 
     box-shadow: 10px 12px 15px #222222;
     backdrop-filter: blur(14.5px);
-    /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 27px;
 }
@@ -279,4 +285,82 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+} */
+.surfacing-equipment {
+    position: relative;
+    margin-right: 200px;
+    z-index: 99;
+}
+
+/* расходные материалы */
+
+.consumables {
+    padding-top: 67px;
+    position: relative;
+    margin-left: 495px;
+    z-index: 99;
+}
+
+/* услуги */
+
+.services__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 45px;
+    padding-top: 430px;
+}
+.services__info-description {
+    display: flex;
+    width: 803px;
+
+}
+.services-title {
+    font-family: Disket-Mono-Regular, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.services-list-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+.services-list {
+    font-family: Disket-Mono-Regular, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* преимущества */
+
+.benefits__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 45px;
+    padding-top: 115px;
+}
+.benefits__row {
+    display: flex;
+    column-gap: 40px;
+}
+.benefits-h2 {
+    font-family: Disket-Mono-Regular, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.benefits__row-items {
+    text-align: center;
+}
+.benefits-text {
+    padding-top: 20px;
+    font-family: Disket-Mono-Regular, sans-serif;
+    font-size: 15px;
 }
