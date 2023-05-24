@@ -1,13 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+@import "./reset.css";
 @font-face {
     font-family: Disket-Mono-Regular;
     src: url(../fonts/Disket-Mono-Regular.ttf)
@@ -26,9 +17,9 @@ body {
     overflow-x: hidden;
 }
 .container {
+    max-width: 1312px;
     margin: 0 auto;
     padding: 0 15px;
-    width: 1312px;
 }
 .holding-container {
     background-image: url("/img/foil-background.png");
@@ -41,12 +32,7 @@ body {
 /*------------- header ------------*/
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-
-    /* min-height: 848px; */
 }
 .nav {
     display: flex;
